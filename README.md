@@ -34,4 +34,5 @@ The Embedded System uses USART to interact with the console, so make sure the bo
 
 In the final product, temperature samples are collected every 1s under fast mode or 10s under slow mode. All data will be printed when the buffer mode is toggled. Pressing ’h’ will show the system instruction.
 
-## Screenshots
+## Demo
+![Demo](screenshots/demo.gif)
