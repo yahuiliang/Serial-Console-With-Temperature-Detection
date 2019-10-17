@@ -4,8 +4,8 @@ This is the final project from the course Embedded System 1. This project was a 
 
 ## Micro-Controller and Board Schema
 
-![Micro-Controller](https://lh3.googleusercontent.com/2YM9eAnCKZKu3L29WaXN30f6D5rZ8R5VwIrBzx-AmD5dy0rkrOYRIdfgaq0VozsqK6JgUwB-32hJ)
-![Board Schema](https://lh3.googleusercontent.com/U9t8GxCB75mbFo-su5UJLCYOJ8IDMc1R17cr3QFBBBScInLaiSQwdWWoy9gRmjW6ra3CAKqgw-Ju)
+![Micro-Controller](STM32F446RE.jpg)
+![Board Schema](devboard_schematic_V1.jpg)
 
 The micro-controller of the embedded system is STM32F446RE, and the processor is ARM® Cortex®-M4 32-bit RISC core operating at a frequency of up to 180 MHz. Peripherals consists of:
 
