@@ -3,10 +3,6 @@
 This is the final project from the course Embedded System 1. This project was a room temperature detection system in Assembly with 3 modes for collecting data: buffer mode, slow mode, and fast mode.
 
 ## Micro-Controller and Board Schema
-<div align="center">
-    <img style="height:100%;" src="">
-    <img style="height:100%;" src="">
-</div>
 
 ![Micro-Controller](https://lh3.googleusercontent.com/2YM9eAnCKZKu3L29WaXN30f6D5rZ8R5VwIrBzx-AmD5dy0rkrOYRIdfgaq0VozsqK6JgUwB-32hJ)
 ![Board Schema](https://lh3.googleusercontent.com/U9t8GxCB75mbFo-su5UJLCYOJ8IDMc1R17cr3QFBBBScInLaiSQwdWWoy9gRmjW6ra3CAKqgw-Ju)
