@@ -123,12 +123,6 @@ ready_to_send:
 
 	# determine which cmd the user typed into the console.
 	ldrb r3,[r1]
-	ldrb r4,[r1,#1]
-	cmp r4,#0xD
-	bne invalid
-	ldrb r4,[r1,#2]
-	cmp r4,#0xA
-	bne invalid
 
 	# compare the cmd received to each cmd stored in memory.
 	# determine if needs to display welcome message.
@@ -149,6 +143,11 @@ ready_to_send:
 	bne turn_buffer_mode_off
 
 1:
+
+	# determine if just shows the current temperature.
+	cmp r3,#0x74
+	beq show_temperature
+
 	# determine if needs to slow down the sample rate.
 	cmp r3,#0x73
 	beq turn_slow_mode_on
@@ -156,10 +155,6 @@ ready_to_send:
 	# determine if needs to speed up the sample rate.
 	cmp r3,#0x66
 	beq turn_fast_mode_on
-
-	# determine if just shows the current temperature.
-	cmp r3,#0x74
-	beq show_temperature
 
 	# display invalid info when an invalid cmd typed in.
 invalid:
@@ -339,7 +334,7 @@ ready_to_receive:
 	# load one character.
 	ldr r1,[r0,USARTx_DR_OFFSET]
 	# determine if there is no more characters.
-	cmp r1,#10
+	cmp r1,#13
 	beq finish_receiving
 	# load the offset of the current character.
 	ldr r3,[r2]

@@ -52,7 +52,7 @@ temperature:
 	.space 2
 	.ascii "."
 	.space 1
-	.asciz "celcius degree\r\n"
+	.asciz " c\r\n"
 
 	.global buffer_mode
 # The variable which shows the current buffer mode.
